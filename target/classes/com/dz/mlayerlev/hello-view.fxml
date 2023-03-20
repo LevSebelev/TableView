@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dz.mlayerlev.uicontroler">
+        <children>
+            <HBox prefHeight="400.0" prefWidth="600.0">
+                <children>
+                    <VBox prefHeight="400.0" prefWidth="339.0">
+                        <children>
+                            <ListView fx:id="lv" onMouseClicked="#listclick" prefHeight="466.0" prefWidth="339.0" />
+                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                <children>
+                                    <TextArea fx:id="searchstr" prefHeight="38.0" prefWidth="250.0" />
+                                    <Button mnemonicParsing="false" onAction="#search" text="Search" />
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                    <VBox prefHeight="400.0" prefWidth="255.0">
+                        <children>
+                            <Label fx:id="l1" prefHeight="23.0" prefWidth="245.0" text="Label" />
+                            <Label fx:id="l2" prefHeight="22.0" prefWidth="256.0" text="Label" />
+                            <Label fx:id="l3" prefHeight="25.0" prefWidth="255.0" text="Label" />
+                            <Label fx:id="l4" prefHeight="21.0" prefWidth="251.0" text="Label" />
+                            <Button mnemonicParsing="false" onAction="#delbut" text="Delete" />
+                            <TextField fx:id="t1" />
+                            <TextField fx:id="t2" />
+                            <TextField fx:id="t3" />
+                            <TextField fx:id="t4" />
+                            <Button mnemonicParsing="false" onAction="#addbut" prefHeight="24.0" prefWidth="51.0" text="Add" />
+                  <Button fx:id="lbut" mnemonicParsing="false" onAction="#start" text="Load" />
+                  <Button mnemonicParsing="false" onAction="#save" prefHeight="24.0" prefWidth="50.0" text="Save" />
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+        </children>
+    </AnchorPane>
